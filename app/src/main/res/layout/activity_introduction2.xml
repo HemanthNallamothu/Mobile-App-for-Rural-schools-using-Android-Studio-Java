@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".introduction2">
+
+    <TextView
+        android:id="@+id/InstructionTitle"
+        android:layout_width="161dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/instructions"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Instruction1"
+        android:layout_width="332dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="serif"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/Instructions_Text1"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InstructionTitle" />
+
+    <TextView
+        android:id="@+id/Instruction2"
+        android:layout_width="330dp"
+        android:layout_height="68dp"
+        android:fontFamily="serif"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/Instructions_Text2"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Instruction1" />
+
+    <TextView
+        android:id="@+id/Instruction3"
+        android:layout_width="330dp"
+        android:layout_height="133dp"
+        android:fontFamily="serif"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/Instructions_Text3"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Instruction2" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="84dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="48dp"
+        android:background="#334734"
+        android:text="@string/next"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Instruction3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_prev"
+        android:layout_width="84dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="96dp"
+        android:background="#334734"
+        android:text="@string/prev"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_next"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Instruction3"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

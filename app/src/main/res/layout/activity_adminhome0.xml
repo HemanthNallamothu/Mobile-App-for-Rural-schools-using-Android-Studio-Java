@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminhome0">
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="278dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="88dp"
+        android:background="#673AB7"
+        android:text="@string/logout"
+        android:textColor="#FBFBFB"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendToAdmin"
+        app:layout_constraintVertical_bias="0.954" />
+
+    <TextView
+        android:id="@+id/admintext"
+        android:layout_width="283dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="76dp"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/admin_text_details"
+        android:textAlignment="center"
+        android:textColor="#070505"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sendToAdmin"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="#4987CA"
+        android:text="@string/student_details"
+        android:textColor="#FAF9F9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admintext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
